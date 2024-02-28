@@ -1,0 +1,308 @@
+0000.114 (R) [notice] Looking for db archive: file name: backup_2024-02-24-0626_localhost_TTDTTDN_0fed76ab9a8a-db.gz
+0000.115 (R) [notice] Archive is expected to be size: 339.6 KB: OK
+0000.119 (R) [notice] Looking for plugins archive: file name: backup_2024-02-24-0626_localhost_TTDTTDN_0fed76ab9a8a-plugins2.zip
+0000.120 (R) [notice] Archive is expected to be size: 665.2 KB: OK
+0000.122 (R) [notice] Looking for themes archive: file name: backup_2024-02-24-0626_localhost_TTDTTDN_0fed76ab9a8a-themes.zip
+0000.123 (R) [notice] Archive is expected to be size: 6869 KB: OK
+0000.126 (R) [notice] Looking for uploads archive: file name: backup_2024-02-24-0626_localhost_TTDTTDN_0fed76ab9a8a-uploads2.zip
+0000.127 (R) [notice] Archive is expected to be size: 12342.9 KB: OK
+0000.130 (R) [notice] Looking for others archive: file name: backup_2024-02-24-0626_localhost_TTDTTDN_0fed76ab9a8a-others.zip
+0000.131 (R) [notice] Archive is expected to be size: 1459.7 KB: OK
+0000.134 (R) [notice] Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.138 (R) [notice] Unpacking backup... (backup_2024-02-24-0626_localhost_TTDTTDN_0fed76ab9a8a-db.gz, 0.3 Mb)
+0000.141 (R) [notice] Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.211 (R) [notice] Bật chế độ Bảo trì&#8230;
+0000.232 (R) [notice] Backup of: http://localhost:880/TTDT-TDN
+0000.257 (R) [notice] Content URL: http://localhost:880/TTDT-TDN/wp-content
+0000.257 (R) [notice] Uploads URL: http://localhost:880/TTDT-TDN/wp-content/uploads
+0000.257 (R) [notice] Old table prefix: wp_
+0000.258 (R) [notice] Old ABSPATH: D:\laragon\www\TTDT-TDN/
+0000.258 (R) [notice] UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.258 (R) [notice] Site information: multisite = 0
+0000.258 (R) [notice] Site information: sql_mode = NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.260 (R) [notice] New table prefix: 8d_
+0000.267 (R) [notice] Processing table (InnoDB):  wp_options - will restore as: 8d_options
+0000.416 (R) [notice] Atomic restore: dropping original table (wp_options)
+0000.428 (R) [notice] Atomic restore: renaming new table (8d_options) to final table name (wp_options)
+0001.022 (R) [notice] Ô tìm kiếm và thay thế  wp_options: rows: 607
+0001.071 (R) [notice] Processing table (InnoDB):  wp_users - will restore as: 8d_users
+0001.115 (R) [notice] Atomic restore: dropping original table (wp_users)
+0001.129 (R) [notice] Atomic restore: renaming new table (8d_users) to final table name (wp_users)
+0001.148 (R) [notice] Ô tìm kiếm và thay thế  wp_users: rows: 1
+0001.149 (R) [notice] Processing table (InnoDB):  wp_usermeta - will restore as: 8d_usermeta
+0001.185 (R) [notice] Atomic restore: dropping original table (wp_usermeta)
+0001.197 (R) [notice] Atomic restore: renaming new table (8d_usermeta) to final table name (wp_usermeta)
+0001.216 (R) [notice] Ô tìm kiếm và thay thế  wp_usermeta: rows: 69
+0001.219 (R) [notice] Processing table (InnoDB):  wp_commentmeta - will restore as: 8d_commentmeta
+0001.247 (R) [notice] Atomic restore: dropping original table (wp_commentmeta)
+0001.258 (R) [notice] Atomic restore: renaming new table (8d_commentmeta) to final table name (wp_commentmeta)
+0001.275 (R) [notice] Ô tìm kiếm và thay thế  wp_commentmeta: rows: 0
+0001.275 (R) [notice] Processing table (InnoDB):  wp_comments - will restore as: 8d_comments
+0001.315 (R) [notice] Atomic restore: dropping original table (wp_comments)
+0001.326 (R) [notice] Atomic restore: renaming new table (8d_comments) to final table name (wp_comments)
+0001.347 (R) [notice] Ô tìm kiếm và thay thế  wp_comments: rows: 0
+0001.347 (R) [notice] Processing table (InnoDB):  wp_links - will restore as: 8d_links
+0001.375 (R) [notice] Atomic restore: dropping original table (wp_links)
+0001.387 (R) [notice] Atomic restore: renaming new table (8d_links) to final table name (wp_links)
+0001.404 (R) [notice] Ô tìm kiếm và thay thế  wp_links: rows: 0
+0001.404 (R) [notice] Processing table (InnoDB):  wp_postmeta - will restore as: 8d_postmeta
+0001.490 (R) [notice] Atomic restore: dropping original table (wp_postmeta)
+0001.503 (R) [notice] Atomic restore: renaming new table (8d_postmeta) to final table name (wp_postmeta)
+0001.519 (R) [notice] Ô tìm kiếm và thay thế  wp_postmeta: rows: 6
+0001.521 (R) [notice] Processing table (InnoDB):  wp_posts - will restore as: 8d_posts
+0001.669 (R) [notice] Atomic restore: dropping original table (wp_posts)
+0001.683 (R) [notice] Atomic restore: renaming new table (8d_posts) to final table name (wp_posts)
+0001.704 (R) [notice] Ô tìm kiếm và thay thế  wp_posts: rows: 386
+0001.824 (R) [notice] Processing table (InnoDB):  wp_term_relationships - will restore as: 8d_term_relationships
+0001.861 (R) [notice] Atomic restore: dropping original table (wp_term_relationships)
+0001.872 (R) [notice] Atomic restore: renaming new table (8d_term_relationships) to final table name (wp_term_relationships)
+0001.883 (R) [notice] Skipping this table: data in this table (wp_term_relationships) should not be search/replaced
+0001.883 (R) [notice] Processing table (InnoDB):  wp_term_taxonomy - will restore as: 8d_term_taxonomy
+0001.916 (R) [notice] Atomic restore: dropping original table (wp_term_taxonomy)
+0001.928 (R) [notice] Atomic restore: renaming new table (8d_term_taxonomy) to final table name (wp_term_taxonomy)
+0001.944 (R) [notice] Ô tìm kiếm và thay thế  wp_term_taxonomy: rows: 75
+0001.947 (R) [notice] Processing table (InnoDB):  wp_termmeta - will restore as: 8d_termmeta
+0001.979 (R) [notice] Atomic restore: dropping original table (wp_termmeta)
+0001.990 (R) [notice] Atomic restore: renaming new table (8d_termmeta) to final table name (wp_termmeta)
+0002.006 (R) [notice] Ô tìm kiếm và thay thế  wp_termmeta: rows: 10
+0002.007 (R) [notice] Processing table (InnoDB):  wp_terms - will restore as: 8d_terms
+0002.055 (R) [notice] Atomic restore: dropping original table (wp_terms)
+0002.066 (R) [notice] Atomic restore: renaming new table (8d_terms) to final table name (wp_terms)
+0002.085 (R) [notice] Ô tìm kiếm và thay thế  wp_terms: rows: 75
+0002.086 (R) [notice] Processing table (InnoDB):  wp_actionscheduler_actions - will restore as: 8d_actionscheduler_actions
+0002.139 (R) [notice] Atomic restore: dropping original table (wp_actionscheduler_actions)
+0002.142 (R) [notice] Atomic restore: renaming new table (8d_actionscheduler_actions) to final table name (wp_actionscheduler_actions)
+0002.163 (R) [notice] Ô tìm kiếm và thay thế  wp_actionscheduler_actions: rows: 1
+0002.164 (R) [notice] Processing table (InnoDB):  wp_actionscheduler_claims - will restore as: 8d_actionscheduler_claims
+0002.189 (R) [notice] Atomic restore: dropping original table (wp_actionscheduler_claims)
+0002.192 (R) [notice] Atomic restore: renaming new table (8d_actionscheduler_claims) to final table name (wp_actionscheduler_claims)
+0002.207 (R) [notice] Ô tìm kiếm và thay thế  wp_actionscheduler_claims: rows: 0
+0002.207 (R) [notice] Processing table (InnoDB):  wp_actionscheduler_groups - will restore as: 8d_actionscheduler_groups
+0002.235 (R) [notice] Atomic restore: dropping original table (wp_actionscheduler_groups)
+0002.237 (R) [notice] Database queries processed: 50 in 2.08 seconds
+0002.237 (R) [notice] Atomic restore: renaming new table (8d_actionscheduler_groups) to final table name (wp_actionscheduler_groups)
+0002.252 (R) [notice] Ô tìm kiếm và thay thế  wp_actionscheduler_groups: rows: 1
+0002.253 (R) [notice] Processing table (InnoDB):  wp_actionscheduler_logs - will restore as: 8d_actionscheduler_logs
+0002.284 (R) [notice] Atomic restore: dropping original table (wp_actionscheduler_logs)
+0002.286 (R) [notice] Atomic restore: renaming new table (8d_actionscheduler_logs) to final table name (wp_actionscheduler_logs)
+0002.302 (R) [notice] Ô tìm kiếm và thay thế  wp_actionscheduler_logs: rows: 1
+0002.303 (R) [notice] Processing table (InnoDB):  wp_nextend2_image_storage - will restore as: 8d_nextend2_image_storage
+0002.333 (R) [notice] Atomic restore: dropping original table (wp_nextend2_image_storage)
+0002.335 (R) [notice] Atomic restore: renaming new table (8d_nextend2_image_storage) to final table name (wp_nextend2_image_storage)
+0002.351 (R) [notice] Ô tìm kiếm và thay thế  wp_nextend2_image_storage: rows: 9
+0002.352 (R) [notice] Processing table (InnoDB):  wp_nextend2_section_storage - will restore as: 8d_nextend2_section_storage
+0002.390 (R) [notice] Atomic restore: dropping original table (wp_nextend2_section_storage)
+0002.393 (R) [notice] Atomic restore: renaming new table (8d_nextend2_section_storage) to final table name (wp_nextend2_section_storage)
+0002.410 (R) [notice] Ô tìm kiếm và thay thế  wp_nextend2_section_storage: rows: 1
+0002.411 (R) [notice] Processing table (InnoDB):  wp_nextend2_smartslider3_generators - will restore as: 8d_nextend2_smartslider3_generators
+0002.435 (R) [notice] Atomic restore: dropping original table (wp_nextend2_smartslider3_generators)
+0002.437 (R) [notice] Atomic restore: renaming new table (8d_nextend2_smartslider3_generators) to final table name (wp_nextend2_smartslider3_generators)
+0002.452 (R) [notice] Ô tìm kiếm và thay thế  wp_nextend2_smartslider3_generators: rows: 0
+0002.452 (R) [notice] Processing table (InnoDB):  wp_nextend2_smartslider3_sliders - will restore as: 8d_nextend2_smartslider3_sliders
+0002.488 (R) [notice] Atomic restore: dropping original table (wp_nextend2_smartslider3_sliders)
+0002.491 (R) [notice] Atomic restore: renaming new table (8d_nextend2_smartslider3_sliders) to final table name (wp_nextend2_smartslider3_sliders)
+0002.512 (R) [notice] Ô tìm kiếm và thay thế  wp_nextend2_smartslider3_sliders: rows: 1
+0002.519 (R) [notice] Processing table (InnoDB):  wp_nextend2_smartslider3_sliders_xref - will restore as: 8d_nextend2_smartslider3_sliders_xref
+0002.546 (R) [notice] Atomic restore: dropping original table (wp_nextend2_smartslider3_sliders_xref)
+0002.548 (R) [notice] Atomic restore: renaming new table (8d_nextend2_smartslider3_sliders_xref) to final table name (wp_nextend2_smartslider3_sliders_xref)
+0002.562 (R) [notice] Ô tìm kiếm và thay thế  wp_nextend2_smartslider3_sliders_xref: rows: 0
+0002.562 (R) [notice] Processing table (InnoDB):  wp_nextend2_smartslider3_slides - will restore as: 8d_nextend2_smartslider3_slides
+0002.608 (R) [notice] Atomic restore: dropping original table (wp_nextend2_smartslider3_slides)
+0002.610 (R) [notice] Atomic restore: renaming new table (8d_nextend2_smartslider3_slides) to final table name (wp_nextend2_smartslider3_slides)
+0002.633 (R) [notice] Ô tìm kiếm và thay thế  wp_nextend2_smartslider3_slides: rows: 13
+0002.667 (R) [notice] Processing table (InnoDB):  wp_social_users - will restore as: 8d_social_users
+0002.696 (R) [notice] Atomic restore: dropping original table (wp_social_users)
+0002.698 (R) [notice] Atomic restore: renaming new table (8d_social_users) to final table name (wp_social_users)
+0002.713 (R) [notice] Ô tìm kiếm và thay thế  wp_social_users: rows: 0
+0002.714 (R) [notice] Processing table (InnoDB):  wp_statistics_exclusions - will restore as: 8d_statistics_exclusions
+0002.746 (R) [notice] Atomic restore: dropping original table (wp_statistics_exclusions)
+0002.749 (R) [notice] Atomic restore: renaming new table (8d_statistics_exclusions) to final table name (wp_statistics_exclusions)
+0002.763 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_exclusions: rows: 0
+0002.764 (R) [notice] Processing table (InnoDB):  wp_statistics_historical - will restore as: 8d_statistics_historical
+0002.794 (R) [notice] Atomic restore: dropping original table (wp_statistics_historical)
+0002.797 (R) [notice] Atomic restore: renaming new table (8d_statistics_historical) to final table name (wp_statistics_historical)
+0002.813 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_historical: rows: 0
+0002.813 (R) [notice] Processing table (InnoDB):  wp_statistics_pages - will restore as: 8d_statistics_pages
+0002.861 (R) [notice] Atomic restore: dropping original table (wp_statistics_pages)
+0002.863 (R) [notice] Atomic restore: renaming new table (8d_statistics_pages) to final table name (wp_statistics_pages)
+0002.881 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_pages: rows: 139
+0002.885 (R) [notice] Processing table (InnoDB):  wp_statistics_search - will restore as: 8d_statistics_search
+0002.921 (R) [notice] Atomic restore: dropping original table (wp_statistics_search)
+0002.923 (R) [notice] Atomic restore: renaming new table (8d_statistics_search) to final table name (wp_statistics_search)
+0002.944 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_search: rows: 1
+0002.945 (R) [notice] Processing table (InnoDB):  wp_statistics_useronline - will restore as: 8d_statistics_useronline
+0002.971 (R) [notice] Atomic restore: dropping original table (wp_statistics_useronline)
+0002.972 (R) [notice] Atomic restore: renaming new table (8d_statistics_useronline) to final table name (wp_statistics_useronline)
+0002.990 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_useronline: rows: 0
+0002.991 (R) [notice] Processing table (InnoDB):  wp_statistics_visit - will restore as: 8d_statistics_visit
+0003.031 (R) [notice] Atomic restore: dropping original table (wp_statistics_visit)
+0003.034 (R) [notice] Atomic restore: renaming new table (8d_statistics_visit) to final table name (wp_statistics_visit)
+0003.052 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_visit: rows: 332
+0003.056 (R) [notice] Processing table (InnoDB):  wp_statistics_visitor - will restore as: 8d_statistics_visitor
+0003.132 (R) [notice] Atomic restore: dropping original table (wp_statistics_visitor)
+0003.134 (R) [notice] Atomic restore: renaming new table (8d_statistics_visitor) to final table name (wp_statistics_visitor)
+0003.155 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_visitor: rows: 167
+0003.161 (R) [notice] Processing table (InnoDB):  wp_statistics_visitor_relationships - will restore as: 8d_statistics_visitor_relationships
+0003.189 (R) [notice] Atomic restore: dropping original table (wp_statistics_visitor_relationships)
+0003.192 (R) [notice] Atomic restore: renaming new table (8d_statistics_visitor_relationships) to final table name (wp_statistics_visitor_relationships)
+0003.207 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_visitor_relationships: rows: 0
+0003.208 (R) [notice] Processing table (InnoDB):  wp_wc_download_log - will restore as: 8d_wc_download_log
+0003.236 (R) [notice] Atomic restore: dropping original table (wp_wc_download_log)
+0003.238 (R) [notice] Atomic restore: renaming new table (8d_wc_download_log) to final table name (wp_wc_download_log)
+0003.256 (R) [notice] Ô tìm kiếm và thay thế  wp_wc_download_log: rows: 0
+0003.257 (R) [notice] Processing table (InnoDB):  wp_wc_webhooks - will restore as: 8d_wc_webhooks
+0003.283 (R) [notice] Atomic restore: dropping original table (wp_wc_webhooks)
+0003.285 (R) [notice] Atomic restore: renaming new table (8d_wc_webhooks) to final table name (wp_wc_webhooks)
+0003.303 (R) [notice] Ô tìm kiếm và thay thế  wp_wc_webhooks: rows: 0
+0003.304 (R) [notice] Processing table (InnoDB):  wp_woocommerce_api_keys - will restore as: 8d_woocommerce_api_keys
+0003.335 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_api_keys)
+0003.337 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_api_keys) to final table name (wp_woocommerce_api_keys)
+0003.360 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_api_keys: rows: 0
+0003.360 (R) [notice] Processing table (InnoDB):  wp_woocommerce_attribute_taxonomies - will restore as: 8d_woocommerce_attribute_taxonomies
+0003.387 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_attribute_taxonomies)
+0003.389 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_attribute_taxonomies) to final table name (wp_woocommerce_attribute_taxonomies)
+0003.405 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_attribute_taxonomies: rows: 0
+0003.405 (R) [notice] Processing table (InnoDB):  wp_woocommerce_downloadable_product_permissions - will restore as: 8d_woocommerce_downloadable_product_permissions
+0003.434 (R) [notice] Database queries processed: 100 in 3.28 seconds
+0003.435 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_downloadable_product_permissions)
+0003.437 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_downloadable_product_permissions) to final table name (wp_woocommerce_downloadable_product_permissions)
+0003.454 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_downloadable_product_permissions: rows: 0
+0003.455 (R) [notice] Processing table (InnoDB):  wp_woocommerce_log - will restore as: 8d_woocommerce_log
+0003.483 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_log)
+0003.485 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_log) to final table name (wp_woocommerce_log)
+0003.503 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_log: rows: 0
+0003.503 (R) [notice] Processing table (InnoDB):  wp_woocommerce_order_itemmeta - will restore as: 8d_woocommerce_order_itemmeta
+0003.533 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_order_itemmeta)
+0003.535 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_order_itemmeta) to final table name (wp_woocommerce_order_itemmeta)
+0003.552 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_order_itemmeta: rows: 0
+0003.552 (R) [notice] Processing table (InnoDB):  wp_woocommerce_order_items - will restore as: 8d_woocommerce_order_items
+0003.581 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_order_items)
+0003.583 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_order_items) to final table name (wp_woocommerce_order_items)
+0003.598 (R) [notice] Skipping this table: data in this table (wp_woocommerce_order_items) should not be search/replaced
+0003.599 (R) [notice] Processing table (InnoDB):  wp_woocommerce_payment_tokenmeta - will restore as: 8d_woocommerce_payment_tokenmeta
+0003.627 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_payment_tokenmeta)
+0003.630 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_payment_tokenmeta) to final table name (wp_woocommerce_payment_tokenmeta)
+0003.646 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_payment_tokenmeta: rows: 0
+0003.646 (R) [notice] Processing table (InnoDB):  wp_woocommerce_payment_tokens - will restore as: 8d_woocommerce_payment_tokens
+0003.671 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_payment_tokens)
+0003.673 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_payment_tokens) to final table name (wp_woocommerce_payment_tokens)
+0003.696 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_payment_tokens: rows: 0
+0003.696 (R) [notice] Processing table (InnoDB):  wp_woocommerce_sessions - will restore as: 8d_woocommerce_sessions
+0003.727 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_sessions)
+0003.729 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_sessions) to final table name (wp_woocommerce_sessions)
+0003.740 (R) [notice] Skipping this table: data in this table (wp_woocommerce_sessions) should not be search/replaced
+0003.741 (R) [notice] Processing table (InnoDB):  wp_woocommerce_shipping_zone_locations - will restore as: 8d_woocommerce_shipping_zone_locations
+0003.769 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_shipping_zone_locations)
+0003.771 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_shipping_zone_locations) to final table name (wp_woocommerce_shipping_zone_locations)
+0003.788 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_shipping_zone_locations: rows: 0
+0003.788 (R) [notice] Processing table (InnoDB):  wp_woocommerce_shipping_zone_methods - will restore as: 8d_woocommerce_shipping_zone_methods
+0003.811 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_shipping_zone_methods)
+0003.813 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_shipping_zone_methods) to final table name (wp_woocommerce_shipping_zone_methods)
+0003.829 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_shipping_zone_methods: rows: 0
+0003.830 (R) [notice] Processing table (InnoDB):  wp_woocommerce_shipping_zones - will restore as: 8d_woocommerce_shipping_zones
+0003.854 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_shipping_zones)
+0003.856 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_shipping_zones) to final table name (wp_woocommerce_shipping_zones)
+0003.871 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_shipping_zones: rows: 0
+0003.871 (R) [notice] Processing table (InnoDB):  wp_woocommerce_tax_rate_locations - will restore as: 8d_woocommerce_tax_rate_locations
+0003.901 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_tax_rate_locations)
+0003.904 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_tax_rate_locations) to final table name (wp_woocommerce_tax_rate_locations)
+0003.921 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_tax_rate_locations: rows: 0
+0003.921 (R) [notice] Processing table (InnoDB):  wp_woocommerce_tax_rates - will restore as: 8d_woocommerce_tax_rates
+0003.953 (R) [notice] Atomic restore: dropping original table (wp_woocommerce_tax_rates)
+0003.955 (R) [notice] Atomic restore: renaming new table (8d_woocommerce_tax_rates) to final table name (wp_woocommerce_tax_rates)
+0003.975 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_tax_rates: rows: 0
+0003.976 (R) [notice] Processing table (InnoDB):  wp_wpmailsmtp_tasks_meta - will restore as: 8d_wpmailsmtp_tasks_meta
+0003.996 (R) [notice] Vô hiệu hóa chế độ bảo trì&#8230;
+0003.996 (R) [notice] Atomic restore: dropping original table (wp_wpmailsmtp_tasks_meta)
+0004.001 (R) [notice] Atomic restore: renaming new table (8d_wpmailsmtp_tasks_meta) to final table name (wp_wpmailsmtp_tasks_meta)
+0004.017 (R) [notice] Ô tìm kiếm và thay thế  wp_wpmailsmtp_tasks_meta: rows: 0
+0004.018 (R) [notice] Finished: lines processed: 127 in 3.86 seconds
+0004.018 (R) [notice] Cleaning up rubbish...
+0004.020 (R) [notice] Database search and replace: replace http://localhost:880/TTDT-TDN in backup dump with http://localhost:880/SinkoGroupWeb
+0004.020 (R) [notice] Database search and replace: replace http://www.localhost:880/TTDT-TDN in backup dump with http://localhost:880/SinkoGroupWeb
+0004.020 (R) [notice] Database search and replace: replace https://www.localhost:880/TTDT-TDN in backup dump with http://localhost:880/SinkoGroupWeb
+0004.020 (R) [notice] Database search and replace: replace https://localhost:880/TTDT-TDN in backup dump with http://localhost:880/SinkoGroupWeb
+0004.020 (R) [notice] Database search and replace: replace D:\laragon\www\TTDT-TDN in backup dump with D:\laragon\www\SinkoGroupWeb
+0004.023 (R) [notice] Ô tìm kiếm và thay thế  wp_actionscheduler_actions: đã xong.
+0004.023 (R) [notice] Ô tìm kiếm và thay thế  wp_actionscheduler_claims: đã xong.
+0004.024 (R) [notice] Ô tìm kiếm và thay thế  wp_actionscheduler_groups: đã xong.
+0004.024 (R) [notice] Ô tìm kiếm và thay thế  wp_actionscheduler_logs: đã xong.
+0004.024 (R) [notice] Ô tìm kiếm và thay thế  wp_commentmeta: đã xong.
+0004.024 (R) [notice] Ô tìm kiếm và thay thế  wp_comments: đã xong.
+0004.024 (R) [notice] Ô tìm kiếm và thay thế  wp_links: đã xong.
+0004.024 (R) [notice] Ô tìm kiếm và thay thế  wp_nextend2_image_storage: đã xong.
+0004.025 (R) [notice] Ô tìm kiếm và thay thế  wp_nextend2_section_storage: đã xong.
+0004.025 (R) [notice] Ô tìm kiếm và thay thế  wp_nextend2_smartslider3_generators: đã xong.
+0004.025 (R) [notice] Ô tìm kiếm và thay thế  wp_nextend2_smartslider3_sliders: đã xong.
+0004.025 (R) [notice] Ô tìm kiếm và thay thế  wp_nextend2_smartslider3_sliders_xref: đã xong.
+0004.025 (R) [notice] Ô tìm kiếm và thay thế  wp_nextend2_smartslider3_slides: đã xong.
+0004.025 (R) [notice] Ô tìm kiếm và thay thế  wp_options: đã xong.
+0004.025 (R) [notice] Ô tìm kiếm và thay thế  wp_postmeta: đã xong.
+0004.025 (R) [notice] Ô tìm kiếm và thay thế  wp_posts: đã xong.
+0004.026 (R) [notice] Ô tìm kiếm và thay thế  wp_social_users: đã xong.
+0004.026 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_exclusions: đã xong.
+0004.026 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_historical: đã xong.
+0004.026 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_pages: đã xong.
+0004.026 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_search: đã xong.
+0004.026 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_useronline: đã xong.
+0004.027 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_visit: đã xong.
+0004.027 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_visitor: đã xong.
+0004.027 (R) [notice] Ô tìm kiếm và thay thế  wp_statistics_visitor_relationships: đã xong.
+0004.027 (R) [notice] Ô tìm kiếm và thay thế  wp_term_relationships: đã xong.
+0004.027 (R) [notice] Ô tìm kiếm và thay thế  wp_term_taxonomy: đã xong.
+0004.027 (R) [notice] Ô tìm kiếm và thay thế  wp_termmeta: đã xong.
+0004.028 (R) [notice] Ô tìm kiếm và thay thế  wp_terms: đã xong.
+0004.028 (R) [notice] Ô tìm kiếm và thay thế  wp_usermeta: đã xong.
+0004.028 (R) [notice] Ô tìm kiếm và thay thế  wp_users: đã xong.
+0004.028 (R) [notice] Ô tìm kiếm và thay thế  wp_wc_download_log: đã xong.
+0004.028 (R) [notice] Ô tìm kiếm và thay thế  wp_wc_webhooks: đã xong.
+0004.028 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_api_keys: đã xong.
+0004.028 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_attribute_taxonomies: đã xong.
+0004.029 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_downloadable_product_permissions: đã xong.
+0004.029 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_log: đã xong.
+0004.029 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_order_itemmeta: đã xong.
+0004.029 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_order_items: đã xong.
+0004.029 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_payment_tokenmeta: đã xong.
+0004.029 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_payment_tokens: đã xong.
+0004.030 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_sessions: đã xong.
+0004.030 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_shipping_zone_locations: đã xong.
+0004.030 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_shipping_zone_methods: đã xong.
+0004.030 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_shipping_zones: đã xong.
+0004.030 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_tax_rate_locations: đã xong.
+0004.030 (R) [notice] Ô tìm kiếm và thay thế  wp_woocommerce_tax_rates: đã xong.
+0004.030 (R) [notice] Ô tìm kiếm và thay thế  wp_wpmailsmtp_tasks_meta: đã xong.
+0004.030 (R) [notice] Tables examined: 45
+0004.031 (R) [notice] Rows examined: 1895
+0004.031 (R) [notice] Changes made: 59
+0004.031 (R) [notice] SQL update commands run: 59
+0004.031 (R) [notice] Lỗi: 0
+0004.031 (R) [notice] Time taken (seconds): 0.415
+0004.047 (R) [notice] Unpacking backup... (backup_2024-02-24-0626_localhost_TTDTTDN_0fed76ab9a8a-plugins2.zip, 0.6 MB)
+0004.334 (R) [notice] Unzip progress: 225 out of 225 files (4.7 MB, plugins/wp-statistics/wp-statistics.php)
+0004.339 (R) [notice] Moving old data out of the way...
+0004.677 (R) [notice] Moving unpacked backup into place...
+0004.757 (R) [notice] Cleaning up rubbish...
+0004.769 (R) [notice] Unpacking backup... (backup_2024-02-24-0626_localhost_TTDTTDN_0fed76ab9a8a-themes.zip, 6.7 MB)
+0006.584 (R) [notice] Unzip progress: 1002 out of 1969 files (8.5 MB, themes/flatsome/inc/builder/core/assets/img/shortcodes/banner_10.jpg)
+0010.635 (R) [notice] Unzip progress: 1969 out of 1969 files (13.4 MB, themes/index.php)
+0010.641 (R) [notice] Moving old data out of the way...
+0010.726 (R) [notice] Moving unpacked backup into place...
+0011.151 (R) [notice] Cleaning up rubbish...
+0011.161 (R) [notice] Unpacking backup... (backup_2024-02-24-0626_localhost_TTDTTDN_0fed76ab9a8a-uploads2.zip, 12.1 MB)
+0011.253 (R) [notice] Unzip progress: 30 out of 30 files (12.3 MB, uploads/wp-statistics/.htaccess)
+0011.258 (R) [notice] Moving old data out of the way...
+0011.262 (R) [notice] Moving unpacked backup into place...
+0011.277 (R) [notice] Cleaning up rubbish...
+0011.288 (R) [notice] Unpacking backup... (backup_2024-02-24-0626_localhost_TTDTTDN_0fed76ab9a8a-others.zip, 1.4 MB)
+0011.494 (R) [notice] Unzip progress: 162 out of 162 files (5.3 MB, languages-old/vi.po)
+0011.512 (R) [notice] Cleaning up rubbish...
+0011.513 (R) [notice] Error: Failed to delete working directory after restoring. (D:/laragon/www/SinkoGroupWeb/wp-content/upgrade/2dd76b50)
+0011.514 (R) [notice] Files found:
+0011.514 (R) [notice] * upgrade
+0011.525 (R) [notice] Plugin path classic-editor/classic-editor.php not found: de-activating.
+0011.526 (R) [notice] Plugin path contact-form-7/wp-contact-form-7.php not found: de-activating.
+0011.526 (R) [notice] Plugin path ml-slider/ml-slider.php not found: de-activating.
+0011.526 (R) [notice] Plugin path smart-slider-3/smart-slider-3.php not found: de-activating.
+0011.526 (R) [notice] Plugin path updraftplus/updraftplus.php not found: de-activating.
+0011.526 (R) [notice] Plugin path woosidebars/woosidebars.php not found: de-activating.
+0011.545 (R) [notice] Restore successful!
