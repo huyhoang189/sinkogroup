@@ -8,7 +8,19 @@
 		'after'  => '</div>',
 	) );
 ?>
+<?php
+// Lấy ảnh đại diện của bài viết
+$post_thumbnail_url = get_the_post_thumbnail_url($post->ID, 'large');
 
+// Kiểm tra nếu có ảnh đại diện
+if ($post_thumbnail_url) {
+    ?>
+    <div class="post-thumbnail">
+        <img src="<?php echo esc_url($post_thumbnail_url); ?>" alt="<?php the_title_attribute(); ?>">
+    </div>
+    <?php
+}
+?>
 
 </div><!-- .entry-content2 -->
 
@@ -80,23 +92,6 @@ if( $my_query->have_posts() ) {
 <div class="related-post">
 <div class="clearfix"></div>
    <div class="row large-columns-1 medium-columns-1 small-columns-1">
-<?php
-while( $my_query->have_posts() ) {
-$my_query->the_post();?>
-
-
- 
-  		<div class="col post-item">
-			<div class="col-inner">
-			<a href="<?php the_permalink()?>" class="plain">
-										<h5 class="post-title is-large "><?php the_title(); ?></h5>
-									
-				</a><!-- .link -->
-			</div><!-- .col-inner -->
-		</div><!-- .col -->
-<?php
-}
-?>
 </div>
  </div>
 

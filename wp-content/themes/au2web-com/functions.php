@@ -173,3 +173,20 @@ function get_post_content_callback() {
 
     wp_send_json($response);
 }
+
+
+function custom_polylang_langswitcher() {
+  $output = '';
+  if (function_exists('pll_the_languages')) {
+    $args = [
+      'show_flags' => 1,
+      'show_names' => 1,
+      'hide_if_empty' => 0,
+      'hide_current' => 0,
+      'echo' => 0,
+    ];
+    $output = '<ul class="polylang_langswitcher">'.pll_the_languages($args).'</ul>';
+  }
+  return $output;
+}
+add_shortcode('polylang_langswitcher', 'custom_polylang_langswitcher');

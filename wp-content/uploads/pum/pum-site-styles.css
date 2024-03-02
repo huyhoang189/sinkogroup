@@ -1,6 +1,6 @@
 /**
  * Do not touch this file! This file created by the Popup Maker plugin using PHP
- * Last modified time: Th2 26 2024, 12:25:25
+ * Last modified time: Feb 29 2024, 12:48:26
  */
 
 
@@ -17,13 +17,6 @@
 .pum-theme-807 .pum-title, .pum-theme-h .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 400; font-size: 32px; line-height: 36px } 
 .pum-theme-807 .pum-content, .pum-theme-h .pum-content { color: #8c8c8c; font-family: inherit; font-weight: 400 } 
 .pum-theme-807 .pum-content + .pum-close, .pum-theme-h .pum-content + .pum-close { position: absolute; height: auto; width: auto; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: 400; font-size: 12px; line-height: 36px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1.00 ) } 
-
-/* Popup Theme 805: cv */
-.pum-theme-805 {  } 
-.pum-theme-805 .pum-container { padding: px; border-radius: px; border: px  ; box-shadow: px px px px rgba( 0, 0, 0, 0.00 ) } 
-.pum-theme-805 .pum-title { text-shadow: px px px rgba( 0, 0, 0, 0.00 ); font-size: px; line-height: px } 
-.pum-theme-805 .pum-content {  } 
-.pum-theme-805 .pum-content + .pum-close { position: absolute; height: auto; width: auto; left: auto; right: auto; bottom: auto; top: auto; padding: px; font-size: px; line-height: px; border: px  ; border-radius: px; box-shadow: px px px px rgba( 0, 0, 0, 0.00 ); text-shadow: px px px rgba( 0, 0, 0, 0.00 ) } 
 
 /* Popup Theme 730: Light Box */
 .pum-theme-730, .pum-theme-lightbox { background-color: rgba( 0, 0, 0, 0.60 ) } 

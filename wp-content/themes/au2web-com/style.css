@@ -12,7 +12,14 @@ Version: 3.0
 */
 */
 /*************** ADD CUSTOM CSS HERE.   ***************/
-.header-bg-image {background-image: url('/wp-content/uploads/2018/10/banner_main.jpg') !important;}
+body{
+	vertical-align: baseline;
+    font-family: 'Cuprum';
+}
+#main{
+	background: #fff;
+	border-radius: 0 0 30px 30px;
+}
 .header-bottom{
 	background: url(images/bg_top_menu.png) repeat-x scroll 0 0 #fff;
 	min-height: 40px;
