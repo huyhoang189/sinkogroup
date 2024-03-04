@@ -162,25 +162,25 @@
 			justify-content:end;
 			margin-top: 30px;
 		}
- .page-head .right {
-    background: #40703d;
-    position: relative;
-    display: table-cell;
-	width: 620px;
-    padding: 25px 0px 25px 50px;
-	border-radius: 30px 0px 0px 0px;
-	margin-right: 30px;
-}
+.page-head .right {
+        background: #40703d;
+        position: relative;
+        display: table-cell;
+        padding: 17px 0px 14px 50px ;
+	    width : 68%;
+        border-radius: 30px 0px 0px 0px;
+        margin-right: 30px;
+    }
+    .page-head .right h1 {
+        color: #fff;
+        font-size: 19px;
+        text-transform: uppercase;
+        font-family: 'Cuprum';
+    }
 		.content-area{
 			padding-top:30px;
 			padding-bottom:30px;
 		}
-		.page-head .right h1 {
-    color: #fff;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-family: 'Cuprum';
-}
     </style>
 </head>
 
@@ -208,7 +208,7 @@ $posts_query = new WP_Query($args);
    <main id="main" class="site-main" role="main">
 	  <div class="mainTable">
 		  <div class="sidebar">
-			  <img src="http://localhost:880/SinkoGroupWeb/wp-content/uploads/2024/03/img1.jpg" alt="" style="margin: -50px 0px 0px -25px;">
+			  <img src="http://103.149.28.238:81/wp-content/uploads/2024/03/img1.jpg" alt="" style="margin: -50px 0px 0px -25px;">
 		  </div>
 		  <table id="myTable">
          <tbody>
