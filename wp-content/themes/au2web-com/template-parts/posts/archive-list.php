@@ -90,6 +90,7 @@
             position: relative;
             float: right;
             display: table-cell;
+			padding: 15px 0px; 
         }
 
         .page-headpro .left {
@@ -104,7 +105,6 @@
             display: table-cell;
             position: relative;
             width: 800px;
-            padding: 25px 0px 25px 50px;
             border-radius: 30px 0px 0px 0px;
             -webkit-border-radius: 30px 0px 0px 0px;
             -moz-border-radius: 30px 0px 0px 0px;
@@ -120,6 +120,7 @@
 
 		.catalog article .pic {
 			width: 60%; /* Thay đổi kích thước của .pic thành 100% */
+			height: 200px;
 			text-align: center; /* Căn giữa nội dung trong .pic */
 			vertical-align: middle;
 		}
@@ -150,27 +151,29 @@
 			font-size: 16px; /* Adjust the font size for better readability */
 			color: #555; /* Change text color to a darker shade */
 		}
+		.sectionsbylink{
+			list-style: none;
+			margin: 0px;
+		}
+		.catalog-menu{
+			padding: 17px 0px 14px 50px !important;
+		}
     </style>
 </head>
 
 <body>
-    <div class="page-headpro" style="width: 100%;">
-        <div class="left"><img src="https://web.archive.org/web/20200202121019im_/http://sinkogroup.ru/upload/resize_cache/iblock/eb1/200_200_1/eb1de611490343ae008ca64f0616e947.png" alt=""></div>
-        <div class="cell right catalog-menu" style="background-color: #ba9b43">
-            <ul class="sectionsbylink">
-                <?php
-                // Lấy danh sách chuyên mục con của chuyên mục archive
-                $archive_category_id = get_queried_object_id();
-                $child_categories = get_categories(array('child_of' => $archive_category_id));
-
-                // Hiển thị danh sách chuyên mục con
-                foreach ($child_categories as $category) {
-                    echo '<li><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
-                }
-                ?>
-            </ul>
-        </div>
-    </div>
+	<div class="page-headpro" style="width: 100%;">
+		<div class="left"></div>
+		<div class="cell right catalog-menu" style="background-color: #ba9b43">
+			<ul class="sectionsbylink">
+				<?php
+				// Hiển thị tên chuyên mục đang chọn
+				$current_category = get_queried_object();
+				echo '<li><a href="' . get_category_link($current_category->term_id) . '">' . $current_category->name . '</a></li>';
+				?>
+			</ul>
+		</div>
+	</div>
     <div class="catalog">
 		<?php
 		if (have_posts()) :
@@ -244,7 +247,7 @@
                     }.bind(this) // Đảm bảo rằng "this" trong success callback là đúng
                 });
             });
-
+				
             $('#closeBtn').on('click', function () {
                 $('#myModal').css('display', 'none');
             });
