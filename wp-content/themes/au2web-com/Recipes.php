@@ -240,9 +240,9 @@ $posts_query = new WP_Query($args);
 		  </div>
 		  <div class="cell right content">
 			  <table id="myTable">
-			 <div class="filter-container">
+			 <!-- <div class="filter-container">
 				 <div class="Selceter" style="display:flex;">
-					<select id="tagFilter">
+				<select id="tagFilter">
 					  <option value="all">Выберите продукт</option>
 					  <option value="курица">курица</option>
 					  <option value="мясо">мясо</option>
@@ -254,7 +254,7 @@ $posts_query = new WP_Query($args);
 					  <option value="классический-маринад">Классический маринад</option>
 				  	</select>
 				 </div>
-		  	</div>
+		  	</div> -->
          <tbody>
 				<?php
 				if ($posts_query->have_posts()) :
@@ -301,17 +301,14 @@ $posts_query = new WP_Query($args);
 		  <?php
 			  echo paginate_links(array(
 				  'total' => $posts_query->max_num_pages,
-				  'prev_text' => 'Previous', // Chữ hiển thị cho Previous
-				  'next_text' => 'Next',     // Chữ hiển thị cho Next
-				  'mid_size' => 1,            // Số trang xung quanh trang hiện tại
+				  'prev_text' => 'Previous', // 
+				  'next_text' => 'Next',     // 
+				  'mid_size' => 1,            // 
 			  ));
 		  ?>
 	   </div>
    </main><!-- #main -->
 </div><!-- #primary >
-
-<!-- Di chuyển phần phân trang ra khỏi .mainTable -->
-
 	<div id="myModal" class="modal">
 		<div class="modal-content">
 			<span class="close" id="closeBtn">&times;</span>
