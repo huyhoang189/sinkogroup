@@ -13,6 +13,8 @@
             width: 70%; /* Đặt chiều rộng là 70% */
             margin-top: 20px;
             border-collapse: collapse;
+			margin-left: auto; /* Để căn giữa theo chiều ngang */
+			margin-right: auto; /* Để căn giữa theo chiều ngang */
         }
 
         #myTable td {
@@ -38,9 +40,8 @@
         }
 		.mainTable{
 			display: flex;
-			justify-content:end;
-			margin-right: 30px;
 			padding-top:50px;
+			width:100%;
 		}
         body {
 			vertical-align: baseline;
@@ -181,6 +182,34 @@
 			padding-top:30px;
 			padding-bottom:30px;
 		}
+		#myTable .tags-column {
+			border-bottom: 1px solid #ddd;
+			padding: 8px;
+			text-align: left;
+		}
+		.filter-container {
+			margin-bottom: 20px; 
+			width: 40%;
+			position: absolute;
+    		right: 130px;
+    		top: 19px;	
+		}
+
+		.filter-container label,
+		.filter-container select {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.filter-container select {
+			margin-left: 10px;
+		}
+		.sidebar{
+			width: 24%;
+		}
+		.content{
+			width: 87%;
+		}
     </style>
 </head>
 
@@ -191,8 +220,7 @@ Template Name: Recipes
 */
 get_header();
 
-// Khai báo và gán giá trị cho biến $posts_query
-$posts_per_page = 2;
+$posts_per_page = 5;
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $args = array('post_type' => 'post', 'posts_per_page' => $posts_per_page, 'paged' => $paged, 'category_name' => 'common');
 $posts_query = new WP_Query($args);
@@ -207,10 +235,26 @@ $posts_query = new WP_Query($args);
 	</div>
    <main id="main" class="site-main" role="main">
 	  <div class="mainTable">
-		  <div class="sidebar">
-			  <img src="http://103.149.28.238:81/wp-content/uploads/2024/03/img1.jpg" alt="" style="margin: -50px 0px 0px -25px;">
+		  <div class="cell sidebar left">
+			  <img src="http://103.149.28.238:81/wp-content/uploads/2024/03/img1.jpg" alt="" style="margin: -50px 0px 0px 0px;">
 		  </div>
-		  <table id="myTable">
+		  <div class="cell right content">
+			  <table id="myTable">
+			 <div class="filter-container">
+				 <div class="Selceter" style="display:flex;">
+					<select id="tagFilter">
+					  <option value="all">Выберите продукт</option>
+					  <option value="курица">курица</option>
+					  <option value="мясо">мясо</option>
+					  <option value="рыба">рыба</option>
+					 </select>
+					 <select id="tagFilter1">
+					  <option value="all">Выберите маринад</option>
+					  <option value="моментальный-маринад">Моментальный маринад</option>
+					  <option value="классический-маринад">Классический маринад</option>
+				  	</select>
+				 </div>
+		  	</div>
          <tbody>
 				<?php
 				if ($posts_query->have_posts()) :
@@ -218,28 +262,39 @@ $posts_query = new WP_Query($args);
 					  $posts_query->the_post();
 				?>
 					  <tr class="post-item" data-post-id="<?php echo get_the_ID(); ?>">
-						 <td><?php echo get_the_ID(); ?></td>
 						 <td class="open-modal" data-post-id="<?php echo get_the_ID(); ?>"><?php the_title(); ?></td>
-						 <td><?php
-							// Lấy danh sách thẻ tag của bài viết
+						 <td class="tags-column">
+							<?php
 							$tags = get_the_tags();
 							if ($tags) {
+								$half_count = ceil(count($tags) / 2);
+								$counter = 0;
+
 								foreach ($tags as $tag) {
-									echo $tag->name . ' ';
+									$counter++;
+
+									echo $tag->name;
+
+									if ($counter == $half_count) {
+										echo '</td><td class="tags-column">';
+									} else {
+										echo ($counter < count($tags)) ? ', ' : '';
+									}
 								}
 							}
-							?></td>
+							?>
+						</td>
 					  </tr>
 				<?php
 				   endwhile;
 				else :
-				   echo 'Không có bài viết nào.';
+				   echo 'Нет сообщений.';
 				endif;
 				wp_reset_postdata();
 				?>
 			 </tbody>
 		  </table>
-      <!-- Đặt thẻ đóng ngoài lớp .mainTable -->
+		  </div>
       </div>
 	  <!-- Phân trang phía dưới bảng -->
 	  <div class="pagination">
@@ -283,11 +338,34 @@ $posts_query = new WP_Query($args);
             $('#closeBtn').on('click', function () {
                 $('#myModal').css('display', 'none');
             });
-
+			
+			
+			$('#tagFilter').on('change', function () {
+			var selectedTag = $(this).val();
+				getPostsByTag(selectedTag);
+			});
+			$('#tagFilter1').on('change', function () {
+			var selectedTag = $(this).val();
+				getPostsByTag(selectedTag);
+			});
+			function getPostsByTag(tag) {
+				$.ajax({
+					type: 'GET',
+					url: ajaxurl,
+					data: {
+						action: 'get_posts_by_tag',
+						tag: tag,
+					},
+					success: function (response) {
+						$('#myTable tbody').html(response);
+					}.bind(this)
+				});
+			}
+			
             function displayModal(postId) {
                 $.ajax({
                     type: 'GET',
-                    url: ajaxurl, // Hãy chắc chắn bạn đã định nghĩa biến 'ajaxurl'
+                    url: ajaxurl, 
                     data: {
                         action: 'get_post_content',
                         post_id: postId,
