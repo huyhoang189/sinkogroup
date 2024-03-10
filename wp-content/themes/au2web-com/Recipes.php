@@ -308,7 +308,7 @@ $posts_query = new WP_Query($args);
 		  ?>
 	   </div>
    </main><!-- #main -->
-</div><!-- #primary >
+</div>
 	<div id="myModal" class="modal">
 		<div class="modal-content">
 			<span class="close" id="closeBtn">&times;</span>
